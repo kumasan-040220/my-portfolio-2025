@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body{
+    background-color: #f4f9ff;
+    color: #383E45;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+max-width: 100%;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 10px 0;
+}
+.container {
+    margin: 60px auto 15px auto;
+    padding: 0 10px;
+    max-width: 1000px;
+}
+
+/* メインの写真 */
+.area_top_view {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.site_title {
+    width: 160px;
+    line-height: 0.5;
+    padding-bottom: 15px;
+    margin: 0;
+}
+.site_title a {
+    display: block;
+}
+.main_visual {
+    max-height: 400px;
+}
+.main_visual img {
+    max-width: 100%;
+}
+
+/* section共通 */
+.section_wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section_title {
+    display: inline-block;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* index */
+#index {
+    background-color: #FFFFFF;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+.index_div {
+    margin-top: 10px;
+}
+.index_div ol {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0;
+
+    margin-left: 20px;
+    font-size: 0.875rem;
+}
+.index_div li {
+    list-style-type: decimal;
+    margin-bottom: 20px;
+}
+.index_div li:last-child {
+    margin-bottom: 0;
+}
+
+/* Detail */
+#detail {
+    max-width: 1000px;
+    padding: 30px 0 20px 0;
+    margin-bottom: 115px;
+}
+.detail_div {
+    display: flex;
+    width: 100%;
+
+    margin-top: 10px;
+}
+.detail_div img {
+    width: 270px;
+}
+.detail_content {
+    margin-left: 60px;
+}
+.detail_content p {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+.detail_content dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+
+    margin: 20px 0 0 0;
+    padding: 16px 0;
+}
+.detail_content dt {
+    width: 25%;
+
+    margin: 0;
+    padding: 0;
+}
+.detail_content dd {
+    width: 75%;
+
+    margin: 0;
+    padding: 0;
+}
+.detail_tx {
+    width: 100%;
+    margin-top: 25px;
+}
+.to_online {
+    width: 100%;
+    margin-top: 20px;
+}
+.to_online p {
+    display: inline-block;
+    border-bottom: 1px solid #333333;
+}
+
+/* フッター */
+footer {
+    font-size: 0.5rem;
+    text-align: start;
+    padding: 0 0 15px 0;
+}
+
+/*SP*/
+/* 画面幅が600px以下のときのスタイル */
+@media screen and (max-width: 1024px) {
+    .section_wrapper {
+        padding: 0 40px;
+    }
+    .container {
+        padding: 0;
+    }
+    .area_top_view {
+        margin-right:10px;
+        margin-left:10px;
+    }
+    .detail_div {
+        display: flex;
+        flex-direction: column;
+    }
+    .detail_div img {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .detail_content {
+        margin: 0;
+    }
+}

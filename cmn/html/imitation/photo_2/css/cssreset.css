@@ -1,0 +1,276 @@
+html {
+    /* モバイルデバイスでのテキストサイズ調整を無効にする */
+    -webkit-text-size-adjust:100%;
+    /* ボックスモデルをborder-boxに設定 */
+    box-sizing:border-box;
+    /* Firefoxのタブサイズを設定 */
+    -moz-tab-size:4;
+    /* タブサイズを設定 */
+    tab-size:4;
+    /* 単語の改行を通常に設定 */
+    word-break:normal;
+}
+
+*, :after, :before {
+    /* 背景の繰り返しを無効にする */
+    background-repeat:no-repeat;
+    /* 親要素からbox-sizingを継承する */
+    box-sizing:inherit;
+}
+
+:after, :before {
+    /* テキストの装飾を継承する */
+    text-decoration:inherit;
+    /* 縦の位置合わせを継承する */
+    vertical-align:inherit;
+}
+
+* {
+    /* 余白をリセットする */
+    margin:0;
+    /* パディングをリセットする */
+    padding:0;
+}
+
+hr {
+    /* 色を継承する */
+    color:inherit;
+    /* 高さをリセットする */
+    height:0;
+    /* オーバーフローを表示可能にする */
+    overflow:visible;
+}
+
+summary {
+    /* リストアイテム表示に設定する */
+    display:list-item;
+}
+
+small {
+    /* フォントサイズを通常の80%に設定する */
+    font-size:80%;
+}
+
+[hidden] {
+    /* 非表示にする */
+    display:none;
+}
+
+abbr[title] {
+    /* 下線を非表示にする */
+    border-bottom:none;
+    /* 下線を設定する */
+    text-decoration:underline;
+    /* 点線の下線を設定する */
+    text-decoration:underline dotted;
+}
+
+a {
+    /* 背景色を透明に設定する */
+    background-color:transparent;
+}
+
+a:active, a:hover {
+    /* アウトラインの幅を0に設定する */
+    outline-width:0;
+}
+
+code, kbd, pre, samp {
+    /* 等幅フォントに設定する */
+    font-family:monospace,monospace;
+}
+
+pre {
+    /* フォントサイズを通常の1emに設定する */
+    font-size:1em;
+}
+
+b, strong {
+    /* フォントの太さを太く設定する */
+    font-weight:bolder;
+}
+
+sub, sup {
+    /* フォントサイズを75%に設定する */
+    font-size:75%;
+    /* 行の高さを0に設定する */
+    line-height:0;
+    /* 相対位置に設定する */
+    position:relative;
+    /* 縦の位置合わせを基準位置に設定する */
+    vertical-align:baseline;
+}
+
+sub {
+    /* 縦位置を下に移動 */
+    bottom:-.25em;
+}
+
+sup {
+    /* 縦位置を上に移動 */
+    top:-.5em;
+}
+
+table {
+    /* 境界線の色を継承する */
+    border-color:inherit;
+    /* テキストのインデントを0に設定する */
+    text-indent:0;
+}
+
+iframe {
+    /* 境界線のスタイルを非表示に設定する */
+    border-style:none;
+}
+
+input {
+    /* 角丸をリセットする */
+    border-radius:0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    /* 高さを自動に設定する */
+    height:auto;
+}
+
+[type=search] {
+    /* テキストフィールドの見た目に設定する */
+    -webkit-appearance:textfield;
+    /* アウトラインのオフセットを-2pxに設定する */
+    outline-offset:-2px;
+}
+
+[type=search]::-webkit-search-decoration {
+    /* デフォルトの検索装飾を非表示に設定する */
+    -webkit-appearance:none;
+}
+
+textarea {
+    /* オーバーフローを自動に設定する */
+    overflow:auto;
+    /* サイズ変更を垂直方向に設定する */
+    resize:vertical;
+}
+
+button, input, optgroup, select, textarea {
+    /* 親要素のフォント設定を継承する */
+    font:inherit;
+}
+
+optgroup {
+    /* フォントの太さを700に設定する */
+    font-weight:700;
+}
+
+button {
+    /* オーバーフローを表示可能にする */
+    overflow:visible;
+}
+
+button, select {
+    /* テキスト変換を無効に設定する */
+    text-transform:none;
+}
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+    /* カーソルをポインターに設定する */
+    cursor:pointer;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    /* 境界線のスタイルを非表示に設定する */
+    border-style:none;
+    /* パディングを0に設定する */
+    padding:0;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button:-moz-focusring {
+    /* アウトラインを点線のボタンテキストに設定する */
+    outline:1px dotted ButtonText;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    /* ボタンの見た目に設定する */
+    -webkit-appearance:button;
+}
+
+button, input, select, textarea {
+    /* 背景色を透明に設定する */
+    background-color:transparent;
+    /* 境界線のスタイルを非表示に設定する */
+    border-style:none;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    /* アウトラインの幅を0に設定する */
+    outline-width:0;
+}
+
+select {
+    /* Firefoxでのセレクトの見た目をデフォルトに設定する */
+    -moz-appearance:none;
+    /* WebKitブラウザでのセレクトの見た目をデフォルトに設定する */
+    -webkit-appearance:none;
+}
+
+select::-ms-expand {
+    /* セレクトの展開アイコンを非表示に設定する */
+    display:none;
+}
+
+select::-ms-value {
+    /* セレクトの値の色を現在の色に設定する */
+    color:currentColor;
+}
+
+legend {
+    /* 境界線を非表示に設定する */
+    border:0;
+    /* 色を継承する */
+    color:inherit;
+    /* 表の表示に設定する */
+    display:table;
+    /* 最大幅を100%に設定する */
+    max-width:100%;
+    /* ホワイトスペースを通常に設定する */
+    white-space:normal;
+}
+
+::-webkit-file-upload-button {
+    /* ボタンの見た目に設定する */
+    -webkit-appearance:button;
+    /* 色を継承する */
+    color:inherit;
+    /* フォント設定を継承する */
+    font:inherit;
+}
+
+[disabled] {
+    /* カーソルをデフォルトに設定する */
+    cursor:default;
+}
+
+img {
+    /* 境界線のスタイルを非表示に設定する */
+    border-style:none;
+}
+
+progress {
+    /* 縦の位置合わせを基準位置に設定する */
+    vertical-align:baseline;
+}
+
+[aria-busy=true] {
+    /* カーソルを進行中に設定する */
+    cursor:progress;
+}
+
+[aria-controls] {
+    /* カーソルをポインターに設定する */
+    cursor:pointer;
+}
+
+[aria-disabled=true] {
+    /* カーソルをデフォルトに設定する */
+    cursor:default;
+}

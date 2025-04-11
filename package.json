@@ -1,0 +1,13 @@
+{
+  "name": "note-updater",
+  "version": "1.0.0",
+  "description": "noteの記事を自動的にウェブサイトに追加するスクリプト",
+  "main": "update_note.js",
+  "scripts": {
+    "update": "node update_note.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "xml2js": "^0.4.23"
+  }
+}
