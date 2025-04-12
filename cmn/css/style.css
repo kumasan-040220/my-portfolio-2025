@@ -64,7 +64,7 @@ li {
 
 #header ul {
   display: flex;
-  font-size: 6.06rem;
+  font-size: 3.5rem;
   gap: 18vw;
 }
 
@@ -155,7 +155,7 @@ li {
   width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .wrapper h1 {
