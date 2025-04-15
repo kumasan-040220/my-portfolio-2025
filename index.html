@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ページタイトル（検索結果やブラウザタブに表示） -->
+    <title>Idakuma | Web開発者のポートフォリオ</title>
+    
+    <!-- 検索結果に表示される説明文 -->
+    <meta name="description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオサイト。制作実績・スキル・自己紹介を紹介しています。" />
+    
+    <!-- 補足的なキーワード（重要度は低） -->
+    <meta name="keywords" content="Idakuma, ポートフォリオ, Webエンジニア, React, Next.js, 栃木, フロントエンド" />
+    
+    <!-- SNSシェア用 Open Graph設定（Facebook, LINEなど） -->
+    <meta property="og:title" content="Idakuma | Web開発者のポートフォリオ" />
+    <meta property="og:description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオ。制作実績やスキルをご紹介します。" />
+    <meta property="og:image" content="https://idakuma.site/img/img_og/img_og.png" />
+    <meta property="og:url" content="https://idakuma.site/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitterシェア用カード設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Idakuma | Web開発者のポートフォリオ" />
+    <meta name="twitter:description" content="栃木県在住のWebエンジニアIdakumaのポートフォリオサイト。" />
+    <meta name="twitter:image" content="https://idakuma.site/img_ico/ico_profile.png" />
+    
+    <!-- 正規URLの指定（重複ページ対策） -->
+    <link rel="canonical" href="https://www.idakuma.com/" />
+    
+    <!-- FontAwesomeアイコン -->
+    <script src="https://kit.fontawesome.com/ddbbf01036.js" crossorigin="anonymous"></script>
+    
+    <!-- 共通スタイルCSS -->
+    <link rel="stylesheet" href="cmn/css/style.css" />
+    
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap" rel="stylesheet" />
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" sizes="16x16" href="cmn/favicons/snowflake_white.svg" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="main" class="main-container">
+        <div class="box-container">
+          <div class="box"></div>
+          <h1 class="box-text">Hello World.</h1>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="wrapper">
+          <h1>Works</h1>
+          <ul class="works-list">
+            <li class="works-item">
+              <a 
+                href="https://cafe-1-eight.vercel.app/"
+                target="_blank"
+              >
+                <img src="cmn/img/img_bg/bg_cafe_1.png" alt="喫茶店">
+              </a>
+            </li>
+            <li class="works-item">
+              <a 
+                href="https://zakka.vercel.app/" 
+                target="_blank"
+                >
+                <img src="cmn/img/img_bg/bg_zakka.png" alt="雑貨屋">
+              </a>
+            </li>
+            <li class="works-item">
+              <a 
+                href="https://personal-gym-mu.vercel.app/"
+                target="_blank"
+              >
+                <img src="cmn/img/img_bg/bg_personal_gym.png" alt="パーソナルジム">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="">
+                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="profile">
+        <div class="wrapper">
+          <h1>Profile</h1>
+          <div class="profile-container">
+            <div class="profile-area">
+              <img
+                src="cmn/img/img_ico/ico_profile.png"
+                alt="プロフィール画像"
+              />
+              <div class="name-area">
+                <p>Ida</p>
+                <p>Takuma</p>
+              </div>
+              <div class="affiliation-area">
+                <p>University Student</p>
+                <p>February.20,2004</p>
+              </div>
+            </div>
+
+            <div class="skill-area">
+              <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skills-group">
+                  <span class="skill lang">Python</span>
+                  <span class="skill lang">C言語</span>
+                  <span class="skill lang">Java</span>
+                  <span class="skill lang">HTML</span>
+                  <span class="skill lang">CSS</span>
+                  <span class="skill lang">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Development Tools</h3>
+                <div class="skills-group">
+                  <span class="skill dev">VSCode</span>
+                  <span class="skill dev">GitHub</span>
+                  <span class="skill dev">Cursor</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>AI Tools</h3>
+                <div class="skills-group">
+                  <span class="skill ai">ChatGPT</span>
+                  <span class="skill ai">Cursor</span>
+                  <span class="skill ai">Suno</span>
+                  <span class="skill ai">Ideogram</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Design Tools</h3>
+                <div class="skills-group">
+                  <span class="skill design">Figma</span>
+                  <span class="skill design">Photoshop</span>
+                  <span class="skill design">PremierePro</span>
+                  <span class="skill design">Illustrator</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="button-group">
+          <div class="button">
+            <a href="https://x.com/ida_kuma040220?s=21" target="_blank">
+              <div class="icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <span>Twitter</span>
+            </a>
+          </div>
+
+          <div class="button">
+            <a
+              href="https://www.instagram.com/ida_nanoda?igsh=djJ1eXZ5ZDlwcW9o&utm_source=qr"
+              target="_blank"
+            >
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </a>
+          </div>
+
+          <div class="button">
+            <a href="https://github.com/kumasan-040220" target="_blank">
+              <div class="icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <div class="button">
+            <a href="#" class="contact-trigger">
+              <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <span>E-mail</span>
+            </a>
+          </div>
+        </div>
+        <p class="copyright">©︎ 2024 Idakuma</p>
+      </div>
+    </footer>
+    <section id="modal-placeholder"></section>
+    <script src="cmn/js/hamburger.js"></script>
+    <script src="cmn/js/app.js"></script>
+    <script src="cmn/js/loadModal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body{
+    color: #383E45;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.site_title {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+    margin: 0;
+}
+.site_title a {
+    display: block;
+}
+h2 {
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: 1px solid #383E45;
+    margin-bottom: 60px;
+}
+h3 {
+    font-size: 1rem;
+    margin-bottom: 10px 0;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/* ヘッダーのスタイル */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    padding-left: 30px;
+}
+#header li a {
+    color: #24292e;
+}
+#header li a:hover {
+    opacity: 0.7;
+}
+
+/* メインの写真 */
+.main_visual {
+    margin-bottom: 80px;
+}
+.main_visual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* フォント設定 */
+/* About */
+.about_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.about_detail_div {
+    text-align: left;
+}
+
+/* Bicycle */
+.bicycle ul {
+    display: flex;
+    justify-content: space-between;
+}
+.bicycle li {
+    width: 32%;
+}
+
+/* フッター */
+footer {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*SP*/
+/* 画面幅が600px以下のときのスタイル */
+@media screen and (max-width: 600px) {
+
+    /* Mainvisual セクション */
+    .main_visual img {
+        /* 画面の高さから60pxを引いた高さを設定 */
+        /* 60pxは固定ヘッダーの高さ */
+        height: calc(100vh - 60px);
+    }
+
+    /* About セクション */
+    .about_div {
+        /* フレックス方向を縦に変更（列方向） */
+        flex-direction: column;
+    }
+    .about_div img {
+        /* 右マージンをリセット */
+        margin-right: 0;
+    }
+
+    /* Bicycle セクション */
+    .bicycle ul {
+        /* フレックス方向を縦に変更（列方向） */
+        flex-direction: column;
+    }
+    .bicycle li {
+        /* リスト項目の幅を100%に設定 */
+        width: 100%;
+        /* 下マージンを30pxに設定 */
+        margin-bottom: 30px;
+    }
+}
