@@ -189,7 +189,11 @@ li {
   aspect-ratio: 16/9;
   margin: 8px 16px 8px 0;
 }
-
+.works-list .works-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* profile */
 #profile {
   background-color: #e8ece9;
