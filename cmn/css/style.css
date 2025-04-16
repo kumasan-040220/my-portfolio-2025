@@ -12,9 +12,6 @@ html {
 body {
   color: #24292e;
   font-family: "Italianno";
-  /* スクロールしてビヨンってなるのを止めるやつ */
-  overscroll-behavior: none;
-  overflow-x: hidden;
 }
 
 a {
