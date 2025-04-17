@@ -41,10 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetElement) {
         // ヘッダーの高さを考慮したスクロール位置の調整
         const headerHeight = document.querySelector("#header").offsetHeight;
+        // スクロール位置の微調整のための追加オフセット（必要に応じて調整）
+        const additionalOffset = -45;
         const targetPosition =
           targetElement.getBoundingClientRect().top +
           window.pageYOffset -
-          headerHeight;
+          headerHeight -
+          additionalOffset;
 
         window.scrollTo({
           top: targetPosition,
