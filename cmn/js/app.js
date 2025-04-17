@@ -27,4 +27,30 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
+
+  // ヘッダーのページ内リンクをスムーズスクロールさせる
+  const headerLinks = document.querySelectorAll("#header a[href^='#']");
+
+  headerLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        // ヘッダーの高さを考慮したスクロール位置の調整
+        const headerHeight = document.querySelector("#header").offsetHeight;
+        const targetPosition =
+          targetElement.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
 });
