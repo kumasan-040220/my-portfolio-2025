@@ -165,26 +165,25 @@ li {
 }
 
 /* works */
-#works {
+#templates {
   background: linear-gradient(to top, #e8ece9, #fff);
 }
 .works-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .works-list {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
 }
 .works-list .works-item {
-  display: inline-block;
-  width: 40%;
-
+  display: block;
+  width: calc(50% - 16px);
   aspect-ratio: 16/9;
-  margin: 8px 16px 8px 0;
+  margin: 8px;
 }
 .works-list .works-item img {
   height: 100%;
