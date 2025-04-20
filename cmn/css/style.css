@@ -7,7 +7,6 @@
 }
 
 html {
-  /* フォントサイズを16pxにする */
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,12 +23,10 @@ a {
 }
 
 p {
-  /* デフォルトサイズ16pxを1.3倍にする */
   font-size: 1.3rem;
 }
 
 img {
-  /* スマホでも縮小される */
   max-width: 100%;
 }
 
@@ -41,17 +38,12 @@ li {
   list-style: none;
 }
 
-/* header */
-
 #header {
   width: 100%;
   padding-top: 10px;
-  /* ヘッダーを上部に固定するやつ */
   position: fixed;
   top: 0;
-  /* 他の要素の下に入らないようでっか数値 */
   z-index: 1000;
-  /* 背景が透けないように */
   background-color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -100,8 +92,6 @@ li {
   transform: rotate(405deg) translate(-5px, -6px);
 }
 
-/* main */
-
 .main-container {
   min-height: 100vh;
   display: flex;
@@ -148,7 +138,6 @@ li {
   color: black;
   margin: 0;
   padding: 0;
-  /* 行の高さを文字サイズに合わせる */
   line-height: 1;
 }
 
@@ -168,7 +157,6 @@ li {
   width: 100%;
 }
 
-/* works */
 #templates {
   background: linear-gradient(to top, #e8ece9, #fff);
 }
@@ -195,7 +183,6 @@ li {
   object-fit: cover;
 }
 
-/* profile */
 #profile {
   background-color: #e8ece9;
 }
@@ -319,7 +306,6 @@ li {
   color: #bdd1c6;
 }
 
-/* Contact Section */
 .contact-form {
   position: fixed;
   top: 50%;
@@ -348,7 +334,6 @@ li {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Contact Overlay */
 .contact-overlay {
   position: fixed;
   top: 0;
@@ -480,7 +465,6 @@ input[type="reset"] {
   cursor: pointer !important;
 }
 
-/* Footer */
 footer {
   width: 100%;
   height: auto;
@@ -592,7 +576,6 @@ footer {
   cursor: default;
 }
 
-/* トップに戻るボタン */
 .to-top-button {
   position: fixed;
   right: 30px;
@@ -630,8 +613,6 @@ footer {
   background-color: rgba(139, 162, 176, 0.9);
   transform: translateY(-5px);
 }
-
-/* SP */
 
 @media screen and (max-width: 768px) {
   html {
@@ -709,12 +690,11 @@ footer {
     width: 100%;
   }
   .profile-container .skill-area {
-    grid-template-columns: 1fr; /* 1列に変更 */
-    gap: 15px; /* 間隔を少し縮小 */
+    grid-template-columns: 1fr;
+    gap: 15px;
     width: 100%;
   }
 
-  /* フッターのレスポンシブ対応 */
   .footer-wrapper {
     padding: 15px 10px;
   }
@@ -758,7 +738,6 @@ footer {
     margin-bottom: 8px;
   }
 
-  /* コンタクトフォームのレスポンシブ対応 */
   .contact-form {
     padding: 30px 15px;
   }
