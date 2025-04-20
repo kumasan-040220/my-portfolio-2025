@@ -44,6 +44,7 @@
     <script
       src="https://kit.fontawesome.com/ddbbf01036.js"
       crossorigin="anonymous"
+      defer
     ></script>
 
     <link rel="stylesheet" href="cmn/css/style.css" />
@@ -51,8 +52,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap"
+      as="style"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
     <link
@@ -93,12 +101,20 @@
           <ul class="works-list">
             <li class="works-item">
               <a href="">
-                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1" />
+                <img
+                  src="cmn/img/img_bg/bg_comingsoon.jpg"
+                  alt="モック1"
+                  loading="lazy"
+                />
               </a>
             </li>
             <li class="works-item">
               <a href="">
-                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1" />
+                <img
+                  src="cmn/img/img_bg/bg_comingsoon.jpg"
+                  alt="モック1"
+                  loading="lazy"
+                />
               </a>
             </li>
           </ul>
@@ -111,12 +127,20 @@
           <ul class="works-list">
             <li class="works-item">
               <a href="https://cafe-1-eight.vercel.app/" target="_blank">
-                <img src="cmn/img/img_bg/bg_cafe_1.png" alt="喫茶店" />
+                <img
+                  src="cmn/img/img_bg/bg_cafe_1.png"
+                  alt="喫茶店"
+                  loading="lazy"
+                />
               </a>
             </li>
             <li class="works-item">
               <a href="https://zakka.vercel.app/" target="_blank">
-                <img src="cmn/img/img_bg/bg_zakka.png" alt="雑貨屋" />
+                <img
+                  src="cmn/img/img_bg/bg_zakka.png"
+                  alt="雑貨屋"
+                  loading="lazy"
+                />
               </a>
             </li>
             <li class="works-item">
@@ -124,12 +148,17 @@
                 <img
                   src="cmn/img/img_bg/bg_personal_gym.png"
                   alt="パーソナルジム"
+                  loading="lazy"
                 />
               </a>
             </li>
             <li class="works-item">
               <a href="">
-                <img src="cmn/img/img_bg/bg_comingsoon.jpg" alt="モック1" />
+                <img
+                  src="cmn/img/img_bg/bg_comingsoon.jpg"
+                  alt="モック1"
+                  loading="lazy"
+                />
               </a>
             </li>
           </ul>
@@ -144,6 +173,7 @@
               <img
                 src="cmn/img/img_ico/ico_profile.png"
                 alt="プロフィール画像"
+                loading="lazy"
               />
               <div class="name-area">
                 <p>Ida</p>
