@@ -41,6 +41,18 @@
 
     <link rel="canonical" href="https://www.idakuma.com/" />
 
+    <!-- フォントの直接先行読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/italianno/v17/dg4n_p3sv6gCJkwzT6Rnj5YpQQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/ddbbf01036.js"
       crossorigin="anonymous"
@@ -49,18 +61,10 @@
 
     <link rel="stylesheet" href="cmn/css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap"
-      as="style"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=M+PLUS+1p&display=block"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
     />
 
     <link
@@ -69,6 +73,35 @@
       sizes="16x16"
       href="cmn/favicons/snowflake_white.svg"
     />
+
+    <style>
+      /* フォントが読み込まれるまでの対策 */
+      .font-loading .box-text {
+        font-family: serif;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .fonts-loaded .box-text {
+        opacity: 1;
+        font-family: "Italianno", serif;
+      }
+    </style>
+    <script>
+      // フォント読み込み状態を検知
+      document.documentElement.classList.add("font-loading");
+      if ("fonts" in document) {
+        Promise.all([document.fonts.load("1em Italianno")]).then(() => {
+          document.documentElement.classList.remove("font-loading");
+          document.documentElement.classList.add("fonts-loaded");
+        });
+      } else {
+        // fonts APIをサポートしていないブラウザ対策
+        setTimeout(() => {
+          document.documentElement.classList.remove("font-loading");
+          document.documentElement.classList.add("fonts-loaded");
+        }, 300);
+      }
+    </script>
   </head>
   <body>
     <header id="header">
