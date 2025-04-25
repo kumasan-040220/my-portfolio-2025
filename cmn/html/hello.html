@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/hello.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScriptの遊び場</h1>
+    </header>
+
+    <section id="addEventListener">
+        <div class="wrapper">
+            <h2>addEventListener</h2>
+            <ul>
+                <li class="click">
+                    "Click here"
+                    <div class="click_description">
+                        const click = document.querySelector(".click");<br>
+
+                        click.addEventListener("click", () => {<br>
+                            click.classList.toggle("clicked");<br>
+                        });
+                    </div>
+                </li>
+                <li class="mouseover">
+                    "Hover here"
+                    <div class="mouseover_description">
+                        const mouseover = document.querySelector(".mouseover");<br>
+
+                        mouseover.addEventListener("mouseover", () => {<br>
+                        mouseover.classList.add("mouseovered");<br>
+                        });<br>
+
+                        mouseover.addEventListener("mouseout", () => {<br>
+                        mouseover.classList.remove("mouseovered");<br>
+                        });<br>
+
+                    </div>
+                </li>
+                <li class="keydown">
+                    "Press the Space key"
+                    <div class="keydown_description">
+                        document.addEventListener("DOMContentLoaded", () => {<br>
+                            const keydownLi = document.querySelector(".keydown");<br>
+                            const keyupLi = document.querySelector(".keyup");<br>
+                          
+                            document.addEventListener("keydown", (e) => {<br>
+                              if (e.code === "Space") {<br>
+                                keydownLi.classList.add("active");<br>
+                                keyupLi.classList.remove("active");<br>
+                                e.preventDefault();<br>
+                              }<br>
+                            });<br>
+                          
+                            document.addEventListener("keyup", (e) => {<br>
+                              if (e.code === "Space") {<br>
+                                keydownLi.classList.remove("active");<br>
+                                keyupLi.classList.add("active");<br>
+                                e.preventDefault();<br>
+                              }<br>
+                            });<br>
+                          });<br>
+                    </div>
+                </li>
+                <li class="keyup">
+                    "Release the Space key"
+                    <div class="keyup_description">
+                        document.addEventListener("DOMContentLoaded", () => {<br>
+                            const keydownLi = document.querySelector(".keydown");<br>
+                            const keyupLi = document.querySelector(".keyup");<br>
+                          
+                            document.addEventListener("keydown", (e) => {<br>
+                              if (e.code === "Space") {<br>
+                                keydownLi.classList.add("active");<br>
+                                keyupLi.classList.remove("active");<br>
+                                e.preventDefault();<br>
+                              }<br>
+                            });<br>
+                          
+                            document.addEventListener("keyup", (e) => {<br>
+                              if (e.code === "Space") {<br>
+                                keydownLi.classList.remove("active");<br>
+                                keyupLi.classList.add("active");<br>
+                                e.preventDefault();<br>
+                              }<br>
+                            });<br>
+                          });<br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="../js/hello.js" defer></script>
+</body>
+</html>
